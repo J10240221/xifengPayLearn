@@ -1,0 +1,251 @@
+@import "../../../theme.less";
+@width_text : 20px;
+@width_icon : 25px;
+@content_width : 100%;
+@left_width:0.7*@content_width;
+@right_width:0.3*@content_width;
+
+.main{
+  min-width: @content_width;
+  background-color: @c_bg_gray;
+}
+.content{
+  background-color: @c_bg_white;
+  margin-left: auto;
+  margin-right: auto;
+  width: @content_width;
+  margin-bottom: @d_spadding_base;
+}
+
+.refContent{
+  composes: content;
+  margin-bottom: 0px;
+  padding-left: @d_spadding_center;
+  padding-right: @d_spadding_center;
+  padding-bottom: @d_spadding_cell;
+}
+.thirdContent{
+  composes: content;
+  padding-bottom: @d_spadding_base;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.10);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.myCalendar{
+  margin-left:auto;
+  margin-right:auto;
+}
+.calendarTitle{
+  font-family: MicrosoftYaHei-Bold;
+  font-size: @font_size_center;
+  color: #4F5762;
+  padding-top: @d_spadding_small;
+  padding-bottom: @d_spadding_base;
+}
+
+.fontBase{
+  font-size: @font_size_cell;
+}
+.fontSmall{
+  font-size: @font_size_small;
+}
+.fontCenter{
+  font-size: @font_size_center;
+}
+.fontBig{
+  font-size: @font_size_big;
+}
+.title{
+  font-size: @font_size_title;
+  font-weight: 900;
+  padding-top: @d_spadding_small;
+  padding-bottom: @d_spadding_small;
+  text-align: center;
+}
+
+.cell{
+  display: table;
+  background: #F7F7F7;
+  width: @content_width;
+  padding:@d_spadding_cell @d_spadding_base;
+  margin-bottom: @d_spadding_base;
+}
+.table{
+  width: 100%;
+  display: table;
+}
+.itemCenter{
+  display: table-cell;
+  vertical-align: middle;
+}
+.left{
+  composes: itemCenter;
+  width: 65%;
+}
+.right{
+  composes: itemCenter;
+  width: 35%;
+}
+
+//右边的样式
+.rightCenter{
+  display: table;
+  width: 100%;
+}
+.daysText{
+  composes: itemCenter;
+  padding-left: 2*@d_spadding_center;
+  font-size: 14px;
+}
+.shuiText{
+  composes: itemCenter;
+  padding-right: @d_spadding_small;
+}
+.shuiTextTop{
+  font-size: 14px;
+  color: #999999;
+  text-align: right;
+}
+.priceText{
+  text-align: right;
+}
+.priceTextColor{
+  font-size: 12px;
+  color: @c_text_red;
+}
+.priceTextFont{
+  composes: priceTextColor;
+  font-size: 20px;
+}
+
+.btn{
+  composes: itemCenter;
+  background-color: @c_text_red;
+  width: 70px;
+  height: 36px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+
+//左边的样式
+.cellLine{
+  composes: table;
+  padding: @d_spadding_cell;
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  border-color: #C2C6CC;
+}
+
+
+.type {
+  composes: itemCenter;
+  width: 5%;
+}
+.typeText{
+  border: 1px solid @c_theme_blue;
+  width: @width_text;
+  height: @width_text;
+  line-height: @width_text;
+  text-align: center;
+  font-size: 12px;
+  color: @c_theme_blue;
+}
+.logoBg{
+  composes: itemCenter;
+  width: 5%;
+}
+.logo{
+  width: @width_icon;
+  height: @width_icon;
+}
+
+.logoCompany_super {
+  composes: itemCenter;
+  width: 30%;
+}
+.logoCompany{
+  font-size: 14px;
+  color: #4F5762;
+  width: 100%;
+}
+.lineNum{
+  composes: logoCompany;
+  font-size: 12px;
+  color: #999999;
+}
+
+.timeLine_super{
+  composes: itemCenter;
+  width: 60%;
+}
+.timeLine{
+  overflow: hidden;
+  width: 100%;
+  margin-left: @d_spadding_cell;
+  color: @c_title_black;
+  text-align: center;
+}
+.totalTime{
+  float: left;
+  padding-top: @d_spadding_cell;
+  padding-bottom: @d_spadding_cell;
+  width: 18%;
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+}
+.totalTimeText{
+  font-size: @font_size_cell;
+  color: @c_title_black;
+}
+.line{
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  width: 100%;
+  background-size: cover;
+}
+.lineRotate{
+  float: right;
+  margin-top: 3px;
+  width: 7px;
+  height: 2px;
+  background-color: @c_theme_blue;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); /* IE 9 */
+  -moz-transform:rotate(45deg); /* Firefox */
+  -webkit-transform:rotate(45deg); /* Safari and Chrome */
+  -o-transform:rotate(45deg); /* Opera */
+}
+
+
+.timeLineItem{
+  float: left;
+  font-size: @font_size_super_big;
+  width: 40%;
+  color: @c_title_black;
+  text-align: right;
+  box-sizing: content-box;
+  padding-top: @d_spadding_cell;
+}
+
+.space{
+  width: 20%;
+  display: inline-block;
+}
+.placeLineItem{
+  display: inline-block;
+  color: @c_title_black;
+  text-align: right;
+  box-sizing: content-box;
+  width: 40%;
+}
+.refPlaceLineItem{
+  composes: placeLineItem;
+  text-align: left;
+}

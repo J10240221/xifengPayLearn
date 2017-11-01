@@ -1,0 +1,69 @@
+@import "../theme.less";
+
+.content {
+  margin: auto;
+  max-width: 1200px;
+  background-color: #fff;
+  margin-top: 10px;
+  position: relative;
+}
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.53);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+}
+
+@space: 5px;
+.payInfo {
+  background-color: #ffaa00;
+  margin: @space*2;
+}
+
+.payLayout {
+  text-align: center;
+  margin: @space;
+}
+
+.payMore {
+  font-size: 20px;
+  margin: @space*2;
+
+}
+
+.payItem {
+  background-color: #00a3ff;
+  border: 1px solid #561928;
+  height: 100px;
+  margin: @space;
+}
+
+.payItemSelect {
+  composes: payItem;
+  border: 2px solid #ff5500;
+}
+
+.integralInfo {
+
+  background-color: #f9c6ff;
+}
+
+.integralInfoImg {
+  display:inline-block ;
+  height: 100px;
+  width: 100px;
+  background-color: #ffaa00;
+}
+.integralInfoRight{
+  display: inline-block;
+}
+
+.nextLayout{
+  text-align: center;
+}

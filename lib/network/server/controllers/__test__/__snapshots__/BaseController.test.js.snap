@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseController TestCase BaseController instance can reset to default value after changed 1`] = `"http://10.0.0.182:9092"`;
+
+exports[`BaseController TestCase BaseController instance have default host 1`] = `"http://10.0.0.182:9092"`;
+
+exports[`BaseController TestCase CheckReqTypeExist return first item when reqType not exist 1`] = `"post"`;
+
+exports[`BaseController TestCase CheckReqTypeExist return first item when reqType send 1`] = `"delete"`;
+
+exports[`BaseController TestCase CheckReqTypeExist return first item when reqType send not in support array 1`] = `"post"`;
+
+exports[`BaseController TestCase CreateParamString can return form-data when arg false 1`] = `"start=%E5%8C%97%E4%BA%AC&target=%E6%9D%AD%E5%B7%9E&suggest=%5B1%2C2%2C%22%E9%A9%AC%E5%B0%BC%E6%8B%89%22%5D&day=10"`;
+
+exports[`BaseController TestCase CreateParamString can return query string when arg true 1`] = `"?start=%E5%8C%97%E4%BA%AC&target=%E6%9D%AD%E5%B7%9E&suggest=%5B1%2C2%2C%22%E9%A9%AC%E5%B0%BC%E6%8B%89%22%5D&day=10"`;
+
+exports[`BaseController TestCase CreateReqUri can return string correctly 1`] = `"http://10.0.0.182:9092/json"`;
+
+exports[`BaseController TestCase CreateReqUri return root path when path not passed 1`] = `"http://10.0.0.182:9092"`;
+
+exports[`BaseController TestCase SendRequest mock get should reach net error 1`] = `"{\\"code\\":505,\\"message\\":\\"Remote Server Error\\"}"`;
+
+exports[`BaseController TestCase SendRequest mock get should return error data 1`] = `"{\\"code\\":403,\\"message\\":\\"request not permmit\\"}"`;
+
+exports[`BaseController TestCase SendRequest mock post should work correctly 1`] = `"{\\"code\\":200,\\"message\\":\\"dropValue\\",\\"data\\":{\\"val1\\":1,\\"val2\\":2}}"`;
+
+exports[`BaseController TestCase SendRequest mock post with contentEncoding none 1`] = `"{\\"code\\":200,\\"message\\":\\"dropValue\\",\\"data\\":{\\"val1\\":1,\\"val2\\":2}}"`;

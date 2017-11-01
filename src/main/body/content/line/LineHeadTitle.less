@@ -1,0 +1,98 @@
+@import "../../../../theme.less";
+@img_width:25%;
+@img_height:0.75*@img_width;
+
+.main{
+  align-content: center;
+  background: @c_bg_gray;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.10);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.con{
+  display: table;
+  width: 100%;
+}
+.left{
+  display: table-cell;
+  vertical-align: middle;
+  width: 280px;
+  height: 210px;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: @d_spadding_small;
+  padding-right: 0;
+}
+.title{
+  border-width: 1px 0 1px 0;
+  border-style: dashed;
+  border-color: #CBD3E5;
+  width: 100%;
+  padding: @d_spadding_small 0;
+}
+.titleHead{
+  display: inline;
+  vertical-align: middle;
+  font-size: @font_size_title;
+  color: #2db7f5;
+  padding-right: @d_spadding_small;
+}
+.refTitleHead{
+  composes: titleHead;
+  padding-left: @d_spadding_small;
+}
+.imgIcon{
+  display: inline;
+  background-size: cover;
+}
+
+.rightLine{
+  overflow: hidden;
+  margin-top: @d_spadding_base;
+  margin-bottom: @d_spadding_base;
+}
+.lineLeft{
+  display: inline-block;
+  width: 70px;
+  font-size: @font-size-base;
+  color: #888D99;
+}
+.lineRight{
+  display: inline-block;
+  font-size: @font-size-base;
+  color: @c_title_black;
+}
+.center{
+  display: inline-block;
+  padding-left: @d_spadding_cell;
+  padding-right: @d_spadding_cell;
+}
+
+.thirdLineRight{
+  display: inline-block;
+  font-size: @font-size-base;
+  color: @border-color;
+  padding:1px @d_spadding_small 1px 5px;
+}
+.price{
+  color:@c_text_red;
+  fontSize:@font_size_cell;
+}
+.refPrice{
+  composes: price;
+  fontSize:@font_size_big;
+}
+.text{
+  color:@c_title_black;
+  fontSize:@font_size_cell;
+}

@@ -1,0 +1,186 @@
+@import "../../../theme.less";
+
+@topHeight: 42px;
+.main{
+}
+.mainContent{
+  max-width: @d_screen_width;
+  margin: auto;
+}
+@left : 31.66%;
+.headLeft{
+  float: left;
+  width: 31.65%;
+  position: relative;
+}
+.headRight{
+  float: left;
+  width: 100-@left;
+  position: relative;
+}
+.topRight{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  padding-bottom: 39.8%;
+}
+.topRightContent{
+  background-color: #00A3FF;
+  position: absolute;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  div{
+    height: 100%;
+  }
+}
+.topRightCarouselTest{
+  background-color: #00ff23;
+  height: 100%;
+  width: 100%;
+}
+.topRightCarousel{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.topLeft {
+  width: 100%;
+  background-color: #29A6FF;
+  border-radius: 4px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+
+
+.topLeftBorder {
+
+  width: 100%;
+  height: 0;
+  padding-bottom: 86%;
+  position: relative;
+  overflow: visible;
+}
+
+.topLeftTitle {
+  line-height: @topHeight;
+  position: absolute;
+  width: 100%;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.topLeftContent {
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: @topHeight;
+  padding: 28px;
+
+}
+
+.topLeftContentCenter {
+  width: 100%;
+  height: 100%;
+  background-color: #4ff92e;
+}
+.center{
+  margin-top: @d_spadding_cell*2;
+  padding: @d_spadding_cell;
+  background-color: #ffffff;
+  border: 1px rgba(0,0,0,0.10) solid;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.centerTitleLayout{
+  padding: @d_spadding_cell*5;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+.centerIcon{
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   vertical-align: middle;
+   background-image: url("../../../images/boutique.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+.centerTitle{
+  display: inline-block;
+  font-size: 18px;
+  margin-left: @d_spadding_cell;
+  color: #000000;
+  vertical-align: middle;
+}
+.centerTitleMoreLayout{
+  position: absolute;
+  height: 40px;
+  right: @d_spadding_cell;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.centerTitleMore{
+  composes: centerTitle;
+  font-size: 14px;
+  margin-left: 0;
+  color:#666;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.centerIconMore{
+  composes: centerIcon;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-left: 3px;
+  background-image: url("../../../images/more.png");
+}
+.more{
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 16px
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+element {
+  height:1000px;
+  background-color: #ededed;
+  font-size: 45px;
+  border-top:1px solid #000;
+  padding-top:55px;
+  padding-left:10px;
+}
+
+active {
+  color:red !important;
+}
+
+.bottomIcon{
+  display: inline-block;
+  width: 23px;
+  height: 17px;
+  vertical-align: middle;
+  background-image: url("../../../images/plane.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

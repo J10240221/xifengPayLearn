@@ -1,0 +1,119 @@
+@import "../../../../theme.less";
+.content{
+}
+@top : @d_spadding_cell;
+
+.title{
+  margin-top: @top;
+  margin-bottom: @top;
+  font-size: 14px;
+  color: #393939;
+}
+.i_content{
+  width: 100%;
+  height: 100%;
+}
+
+.action {
+  cursor: pointer;
+  margin-top: @top*2;
+  margin-bottom: @top*2;
+  margin-left: @d_spadding_cell;
+  display: inline-block;
+  vertical-align: middle;
+}
+.actionImg{
+  width: @d_spadding_cell*3;
+  height: @d_spadding_cell*3;
+  display: inline-block;
+  vertical-align: middle;
+}
+.actionTitle{
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  color: #4F5762;
+  display: inline-block;
+  margin-left: @d_spadding_cell;
+  vertical-align: middle;
+}
+
+.searchAction {
+
+ composes: action;
+  display: block;
+  cursor: pointer;
+}
+.buttonLayout{
+  margin-top: @top;
+  margin-bottom: @top;
+  width: 100%;
+  text-align: center;
+}
+.button{
+  color: #ffffff;
+  height: 36px;
+  width: 170px;
+  display: inline-block;
+  text-align: center;
+  font-family: PingFangHK-Medium;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.searchTitle{
+  display: inline-block;
+  font-size: 14px;
+  color: #393939;
+}
+.row{
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.inputLayout{
+  composes:row;
+}
+.inputLayoutSpan{
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 14px;
+  min-width: 80px;
+  color: #393939;
+}
+.inputLayoutLeft{
+  display: table-cell;
+  width: 10px;
+  height: 1px;
+ }
+.inputLayoutDiv{
+  display: table-cell;
+  min-width: 240px;
+}
+.lineLayout{
+  composes:row;
+  height: 100%;
+}
+.line{
+  background-color: #cbd3e5;
+  width: 1px;
+  height: 50px;
+}
+
+.bar{
+  display: table;
+  padding: 39px 0;
+}
+
+.inputAuto{
+  display: block;
+  height: 36px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0;
+  color: #666666;
+  letter-spacing: 0;
+}

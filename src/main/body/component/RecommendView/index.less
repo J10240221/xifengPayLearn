@@ -1,0 +1,187 @@
+@import "../../../../theme.less";
+
+@lineH: 24px;
+.more {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+
+.cell {
+
+  width: 100%;
+  padding: @d_spadding_cell;
+  background: #FFFFFF;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.border {
+  overflow: hidden;
+  border: 1px rgba(0, 0, 0, 0.10) solid;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.content {
+  position: relative;
+
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.showFrame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.imageFrame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageFrame:hover {
+  overflow: hidden;
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
+}
+
+.titleLayout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.96;
+  background: rgba(0, 0, 0, 0.80);
+  padding: @d_spadding_cell*2  @d_spadding_cell*3;
+
+}
+
+.title {
+  max-width: 100%;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+
+
+}
+
+.titleBlack {
+  composes: title;
+  color: #333333;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  right: @d_spadding_cell*2;
+  padding: @d_spadding_cell/3 @d_spadding_cell*2;
+  background: #29A6FF;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.bottom {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  padding: @d_spadding_cell*3 @d_spadding_cell*3;
+}
+
+.bottomLeft {
+  display: table-cell;
+  text-align: left;
+  max-width: 60%;
+  width: 60%;
+  min-width: 60%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.bottomRight {
+  composes: bottomLeft;
+  text-align: right;
+  max-width: 40%;
+  width: 40%;
+  min-width: 40%;
+}
+
+.money {
+  display: inline-block;
+  font-size: 14px;
+  color: #FF5841;
+  letter-spacing: 0;
+  vertical-align: bottom;
+}
+
+.moneyBig {
+  composes: money;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.moneyGray {
+  composes: more;
+  composes: money;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0;
+}
+
+.moneyBlack {
+  composes: money;
+  color: #333333;
+}
+
+.moneyWhite {
+  composes: money;
+  color: #ffffff;
+}
+
+.moneyWhiteV {
+  composes: moneyWhite;
+  margin: 0 @d_spadding_cell;
+}
+
+.text {
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  composes: more;
+  max-width: 40%;
+  line-height: @lineH;
+  height: @lineH;
+}
+
+.text2 {
+  float: left;
+  width: 20%;
+  height: @lineH;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

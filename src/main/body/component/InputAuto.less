@@ -1,0 +1,61 @@
+@import "../../../theme.less";
+
+.input {
+  width: 80%;
+  height: 36px;
+  fontSize: 16;
+  color: #333;
+}
+
+.input::-webkit-input-placeholder {
+  color: #666;
+}
+
+.input:-moz-placeholder {
+  color: #666;
+}
+
+.input::-moz-placeholder {
+  color: #666;
+}
+
+.input:-ms-input-placeholder {
+  color: #666;
+}
+
+.drop {
+  vertical-align: middle;
+  display: table;
+}
+.dropHeadLineLayout {
+  display: table-cell;
+  padding-right: 5px;
+}
+.dropHeadLine{
+  background-color: @primary-color;
+  width: 4px;
+  height: 14px;
+}
+
+.dropHead {
+  color: @primary-color;
+  font-size: 16px;
+  display: table-cell;
+}
+
+.more {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+.dropItemFloat{
+  display: inline-block;
+  width:25%;
+  composes: more;
+  text-align: left;
+}
+.errorMessage{
+  color: rgba(255, 88, 37, 0.73);
+}
+

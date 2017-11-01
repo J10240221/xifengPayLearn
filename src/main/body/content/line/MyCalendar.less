@@ -1,0 +1,232 @@
+@import "../../../../theme.less";
+/**
+ * 设置日历的大小
+ */
+@height_head : 40px;
+@height_item : 55px;
+@color_bg : @c_bg_gray;
+@color_select : @c_theme_blue;
+.calendar{
+  width: 100%;
+  background-color: @color_bg;
+  border: 1px solid @color_select;
+}
+
+.calendarHeader{
+  overflow: hidden;
+  background-color: @color_bg;
+  border-width: 0px 0 1px 0;
+  border-style: solid;
+  border-color: @color_select;
+}
+.calendarHeader_title{
+  float: left;
+  width:15%;
+  height: @height_head;
+  line-height: @height_head;
+  font-size: 15px;
+  color: @c_title_gray;
+  text-align: right;
+}
+.calendarHeader_con{
+  float: left;
+  width:85%;
+  height: @height_head;
+}
+
+.monthView_bg{
+  height: @height_head;
+  width: 100%;
+  overflow: hidden;
+}
+
+.calendarHeaderIcon{
+  float: left;
+  height: @height_head;
+  width: 7%;
+}
+.refCalendarHeaderIcon{
+  composes: calendarHeaderIcon;
+  float: right;
+
+}
+.btn{
+  float:right;
+  width:30px;
+  height:30px;
+  border-radius:15px;
+  border-width:0px;
+  background-color: @color_bg;
+}
+.iconNone{
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto
+}
+.icon{
+  margin-top: 12.5px;
+  width: 15px;
+  height: 15px;
+}
+.monthView{
+  float: left;
+  height: @height_head;
+  width: 84%;
+  overflow: hidden;
+  position: relative;
+}
+.blurLeft{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -5px;
+  width: 50px;
+  background-image: url("../../../../images/blur_left.png");
+}
+.blurRight{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 40px;
+  background-image: url("../../../../images/blur_right.png");
+}
+.hidden{
+  display: none;
+}
+
+.monthView_super{
+  height: @height_head;
+}
+.monthItem{
+  display: inline-block;
+  width: 80px;
+  height: @height_head;
+  line-height: @height_head;
+  text-align: center;
+  margin-left: @d_spadding_cell;
+  border-style: solid;
+  border-width: 0px 0 3px 0;
+  border-color: @color_bg;
+  font-size: @font_size_small;
+  color: #8F95A0;
+}
+.select_monthItem{
+  composes: monthItem;
+  border-color: @color_select;
+  color: #4F5762;
+}
+
+
+
+
+
+
+
+
+.calendarTitle{
+  margin-left:10px;
+  margin-right:10px;
+  font-size:16px;
+}
+.cBodyHead{
+  overflow: hidden;
+}
+.contentRow{
+  background-color: white;
+  overflow: hidden;
+}
+.borderDefault{
+  float: left;
+  width: 14%;
+  margin: 0.14%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+.borderIsMounseSel{
+  composes: borderDefault;
+  border-color: #29A6FF;
+}
+.defaultItem{
+  width: 100%;
+  height: @height_item;
+  font-size: @font-size-base;
+  border-style: solid;
+  border-color: @c_border_gray;
+  border-width: 1px;
+  padding: 3px 0px 0px 5px;
+}
+.cBodyItem{
+  float: left;
+  width: 14.2%;
+  background-color: white;
+  border-width: 0px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.itemGray{
+  composes: defaultItem;
+  background-color: @c_bg_white;
+}
+.dayGray{
+  color: @c_border_gray;
+}
+
+.itemActive{
+  composes: defaultItem;
+  background-color: #F7F7F7;
+}
+.itemTags{
+  composes: defaultItem;
+  background-color: white;
+}
+.dayTitle{
+  color: @c_title_gray_base;
+  font-size: @font_size_cell;
+  height: 15px;
+  line-height: 15px;
+
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.price{
+  composes: dayTitle;
+  padding-right: @d_spadding_small;
+  color: @c_text_red;
+  font-size: @font_size_cell;
+  text-align: right;
+  height: 16px;
+  line-height: 16px;
+}
+.refPrice{
+  composes: price;
+  margin-top: @d_spadding_small;
+}
+.sit{
+  composes: price;
+  color: @c_title_black;
+  font-size: @font_size_cell;
+}
+
+.itemSelect {
+  composes: defaultItem;
+  border: 1.5px solid @c_border_blue;
+  position: relative;
+}
+.itemSelect_sign{
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../../../../images/select_sign.png");
+  background-size: cover;
+}
